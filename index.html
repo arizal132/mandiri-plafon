@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandiri Plafon - Jasa Konstruksi Profesional Yogyakarta</title>
+    <title>Mandiri Plafon - Jasa Konstruksi dan Bangunan Yogyakarta</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -18,23 +18,18 @@
             font-family: 'Playfair Display', serif;
         }
         
-        /* Color Theory for Construction Industry */
-        /* Slate (Trust & Stability) + Blue (Reliability) + Amber (Energy & Action) */
+        /* Color Palette: Navy Blue (#003366), White (#FFFFFF), Silver Gray (#C0C0C0) */
         
         .gradient-primary {
-            background: linear-gradient(135deg, #1e40af 0%, #1f2937 100%);
-        }
-        
-        .gradient-primary-alt {
-            background: linear-gradient(135deg, #1e40af 0%, #ea580c 100%);
+            background: linear-gradient(135deg, #003366 0%, #00509e 100%);
         }
         
         .gradient-overlay {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.95), rgba(31, 41, 55, 0.95));
+            background: linear-gradient(135deg, rgba(0, 51, 102, 0.95), rgba(0, 80, 158, 0.95));
         }
         
-        .gradient-accent {
-            background: linear-gradient(135deg, #ea580c 0%, #f59e0b 100%);
+        .gradient-light {
+            background: linear-gradient(135deg, #F8F9FA 0%, #ffffff 100%);
         }
         
         .scroll-smooth {
@@ -47,19 +42,15 @@
         
         .card-hover:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 40px rgba(0, 51, 102, 0.15);
         }
         
         .btn-primary {
-            @apply px-8 py-3 bg-gradient-to-r from-blue-700 to-slate-900 text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:scale-95;
-        }
-        
-        .btn-accent {
-            @apply px-8 py-3 bg-gradient-to-r from-orange-600 to-amber-500 text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:scale-95;
+            @apply px-8 py-3 bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:scale-95;
         }
         
         .btn-secondary {
-            @apply px-8 py-3 bg-white text-blue-700 rounded-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:scale-95 border-2 border-blue-700;
+            @apply px-8 py-3 bg-white text-blue-900 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:scale-95 border-2 border-blue-900;
         }
         
         .service-icon {
@@ -74,15 +65,11 @@
         }
         
         .service-card:hover .service-icon {
-            transform: scale(1.15) rotate(-5deg);
+            transform: scale(1.1) rotate(5deg);
         }
         
         .glow-effect {
-            box-shadow: 0 0 40px rgba(30, 64, 175, 0.4);
-        }
-        
-        .glow-amber {
-            box-shadow: 0 0 40px rgba(234, 88, 12, 0.3);
+            box-shadow: 0 0 30px rgba(0, 51, 102, 0.25);
         }
         
         .animate-float {
@@ -91,55 +78,54 @@
         
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-25px); }
+            50% { transform: translateY(-20px); }
         }
         
         .navbar-shadow {
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
         }
         
-        .text-gradient {
-            background: linear-gradient(135deg, #1e40af 0%, #ea580c 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        /* Silver accent class */
+        .accent-silver {
+            color: #C0C0C0;
         }
         
-        .border-accent {
-            border-color: #ea580c;
+        .border-silver {
+            border-color: #C0C0C0;
         }
         
-        .accent-ring {
-            border: 3px solid #ea580c;
+        .bg-silver {
+            background-color: #C0C0C0;
+        }
+        
+        .hover-navy:hover {
+            color: #003366;
         }
     </style>
 </head>
-<body class="scroll-smooth bg-gray-50">
+<body class="scroll-smooth bg-white">
     <!-- Navigation Bar -->
     <nav class="fixed top-0 w-full z-50 navbar-shadow bg-white transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center text-white text-xl font-bold shadow-lg">
-                        <i class="fas fa-hammer"></i>
+                <div class="flex items-center gap-2">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+                        <i class="fas fa-building"></i>
                     </div>
-                    <div class="hidden sm:block">
-                        <p class="font-bold text-lg text-gray-900">Mandiri Plafon</p>
-                        <p class="text-xs text-orange-600 font-semibold">Jasa Konstruksi Terpercaya</p>
-                    </div>
+                    <span class="font-bold text-xl text-blue-900 hidden sm:inline">Mandiri Plafon</span>
                 </div>
 
                 <!-- Desktop Menu -->
                 <ul class="hidden lg:flex gap-8">
-                    <li><a href="#home" class="nav-link text-gray-700 hover:text-blue-700 font-medium transition">Beranda</a></li>
-                    <li><a href="#services" class="nav-link text-gray-700 hover:text-blue-700 font-medium transition">Layanan</a></li>
-                    <li><a href="#portfolio" class="nav-link text-gray-700 hover:text-blue-700 font-medium transition">Portfolio</a></li>
-                    <li><a href="#contact" class="nav-link text-gray-700 hover:text-blue-700 font-medium transition">Kontak</a></li>
+                    <li><a href="#home" class="nav-link text-gray-700 hover:text-blue-900 font-medium transition">Beranda</a></li>
+                    <li><a href="#services" class="nav-link text-gray-700 hover:text-blue-900 font-medium transition">Layanan</a></li>
+                    <li><a href="#portfolio" class="nav-link text-gray-700 hover:text-blue-900 font-medium transition">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link text-gray-700 hover:text-blue-900 font-medium transition">Kontak</a></li>
                 </ul>
 
                 <!-- CTA Button -->
-                <a href="https://wa.me/6285773907878" target="_blank" class="hidden md:flex items-center gap-2 px-6 py-2 gradient-accent text-white rounded-lg hover:shadow-xl transition font-semibold">
+                <a href="https://wa.me/6285773907878" target="_blank" class="hidden md:flex items-center gap-2 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition font-semibold">
                     <i class="fab fa-whatsapp"></i>
                     <span class="hidden lg:inline">WhatsApp</span>
                 </a>
@@ -153,10 +139,10 @@
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden lg:hidden pb-4 border-t">
                 <ul class="flex flex-col gap-4 py-4">
-                    <li><a href="#home" class="text-gray-700 hover:text-blue-700 font-medium">Beranda</a></li>
-                    <li><a href="#services" class="text-gray-700 hover:text-blue-700 font-medium">Layanan</a></li>
-                    <li><a href="#portfolio" class="text-gray-700 hover:text-blue-700 font-medium">Portfolio</a></li>
-                    <li><a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium">Kontak</a></li>
+                    <li><a href="#home" class="text-gray-700 hover:text-blue-900 font-medium">Beranda</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-blue-900 font-medium">Layanan</a></li>
+                    <li><a href="#portfolio" class="text-gray-700 hover:text-blue-900 font-medium">Portfolio</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-900 font-medium">Kontak</a></li>
                 </ul>
             </div>
         </div>
@@ -165,43 +151,42 @@
     <!-- Hero Section -->
     <section id="home" class="gradient-primary pt-40 pb-20 sm:pt-48 sm:pb-32 relative overflow-hidden">
         <div class="absolute inset-0 opacity-20">
-            <div class="absolute top-10 left-10 w-72 h-72 bg-orange-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
-            <div class="absolute bottom-10 right-10 w-72 h-72 bg-slate-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute top-10 left-10 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
                 <div class="text-white space-y-6 animate-fade-in">
-                    <span class="inline-block px-4 py-2 bg-orange-500 bg-opacity-20 text-orange-200 rounded-full text-sm font-semibold border border-orange-400 border-opacity-50">
-                        <i class="fas fa-star mr-2"></i>Solusi Konstruksi Terpercaya
-                    </span>
                     <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                        Wujudkan Bangunan Impian Anda Bersama Ahlinya
+                        Solusi Plafon Profesional untuk Rumah & Bangunan Anda
                     </h1>
                     <p class="text-lg sm:text-xl opacity-95 leading-relaxed">
-                        Mandiri Plafon adalah mitra terpercaya dengan pengalaman 10+ tahun dalam pemasangan plafon, kanopi, desain interior, dan renovasi bangunan berkualitas tinggi di Yogyakarta.
+                        Mandiri Plafon menghadirkan jasa pemasangan plafon berkualitas tinggi dengan standar internasional. Kami berkomitmen memberikan hasil rapi, kuat, dan tahan lama untuk setiap proyek Anda.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#contact" class="btn-primary inline-flex items-center justify-center gap-2">
-                            <i class="fas fa-phone-alt"></i>Hubungi Sekarang
+                            Konsultasi Gratis
+                            <i class="fas fa-arrow-right"></i>
                         </a>
                         <a href="#portfolio" class="btn-secondary inline-flex items-center justify-center gap-2">
-                            <i class="fas fa-images"></i>Lihat Portfolio
+                            Lihat Portfolio
+                            <i class="fas fa-images"></i>
                         </a>
                     </div>
-                    <div class="flex flex-wrap gap-6 pt-6 border-t border-white border-opacity-20">
+                    <div class="flex gap-8 pt-4">
                         <div>
-                            <p class="text-4xl font-bold">500+</p>
-                            <p class="text-sm opacity-90">Proyek Selesai</p>
+                            <p class="text-3xl font-bold">500+</p>
+                            <p class="text-sm opacity-90">Project Selesai</p>
                         </div>
                         <div>
-                            <p class="text-4xl font-bold">4.9★</p>
+                            <p class="text-3xl font-bold">4.9★</p>
                             <p class="text-sm opacity-90">Rating Klien</p>
                         </div>
                         <div>
-                            <p class="text-4xl font-bold">10+</p>
-                            <p class="text-sm opacity-90">Tahun Berpengalaman</p>
+                            <p class="text-3xl font-bold">10+</p>
+                            <p class="text-sm opacity-90">Tahun Pengalaman</p>
                         </div>
                     </div>
                 </div>
@@ -209,9 +194,8 @@
                 <!-- Right Image -->
                 <div class="hidden lg:block">
                     <div class="relative">
-                        <div class="absolute -inset-4 gradient-accent rounded-3xl opacity-75 blur"></div>
-                        <div class="w-full h-96 bg-white rounded-3xl shadow-2xl flex items-center justify-center glow-effect animate-float relative">
-                            <i class="fas fa-hard-hat text-9xl text-blue-700 opacity-10"></i>
+                        <div class="w-full h-96 bg-gradient-light rounded-3xl shadow-2xl flex items-center justify-center glow-effect animate-float">
+                            <i class="fas fa-hammer text-8xl text-blue-900 opacity-20"></i>
                         </div>
                     </div>
                 </div>
@@ -220,51 +204,45 @@
     </section>
 
     <!-- About Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gradient-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Image -->
                 <div class="hidden lg:block">
-                    <div class="w-full h-80 gradient-primary-alt rounded-2xl shadow-xl flex items-center justify-center relative">
-                        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent to-black opacity-20"></div>
-                        <i class="fas fa-users text-8xl text-white opacity-30 relative z-10"></i>
+                    <div class="w-full h-80 bg-gradient-to-br from-blue-900 to-blue-700 rounded-2xl shadow-xl flex items-center justify-center">
+                        <i class="fas fa-building text-8xl text-white opacity-30"></i>
                     </div>
                 </div>
 
                 <!-- Content -->
-                <div class="space-y-8">
-                    <div>
-                        <span class="inline-block px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4">
-                            <i class="fas fa-info-circle mr-2"></i>TENTANG KAMI
-                        </span>
-                        <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                            Mitra Terpercaya untuk Bangunan Berkualitas
-                        </h2>
-                    </div>
+                <div class="space-y-6">
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-blue-900">
+                        Tentang Mandiri Plafon
+                    </h2>
                     <p class="text-gray-700 text-lg leading-relaxed">
-                        Sejak 2015, Mandiri Plafon telah melayani ribuan klien dengan komitmen penuh terhadap kualitas dan kepuasan pelanggan. Tim profesional kami berpengalaman dalam pemasangan plafon, kanopi, desain interior, dan renovasi bangunan menggunakan material terbaik dan teknologi terkini.
+                        Mandiri Plafon adalah perusahaan jasa konstruksi terpercaya yang spesialis dalam pemasangan plafon berkualitas tinggi. Dengan pengalaman lebih dari 10 tahun, kami telah menyelesaikan lebih dari 500 proyek di wilayah Yogyakarta dan sekitarnya.
                     </p>
                     
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border-l-4 border-blue-700 hover:shadow-lg transition">
-                            <i class="fas fa-award text-3xl text-blue-700 mb-3"></i>
-                            <p class="font-semibold text-gray-900">Bersertifikat</p>
-                            <p class="text-sm text-gray-700">Standar internasional</p>
+                        <div class="bg-white p-4 rounded-lg border-2 border-gray-200 hover:border-blue-900 transition">
+                            <i class="fas fa-check-circle text-2xl text-blue-900 mb-2"></i>
+                            <p class="font-semibold text-gray-800">Tenaga Ahli</p>
+                            <p class="text-sm text-gray-600">Berpengalaman & profesional</p>
                         </div>
-                        <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-lg border-l-4 border-orange-600 hover:shadow-lg transition">
-                            <i class="fas fa-star text-3xl text-orange-600 mb-3"></i>
-                            <p class="font-semibold text-gray-900">Berkualitas</p>
-                            <p class="text-sm text-gray-700">Material premium</p>
+                        <div class="bg-white p-4 rounded-lg border-2 border-gray-200 hover:border-blue-900 transition">
+                            <i class="fas fa-star text-2xl text-yellow-500 mb-2"></i>
+                            <p class="font-semibold text-gray-800">Kualitas Terjamin</p>
+                            <p class="text-sm text-gray-600">Standar internasional</p>
                         </div>
-                        <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-lg border-l-4 border-slate-700 hover:shadow-lg transition">
-                            <i class="fas fa-credit-card text-3xl text-slate-700 mb-3"></i>
-                            <p class="font-semibold text-gray-900">Terjangkau</p>
-                            <p class="text-sm text-gray-700">Harga kompetitif</p>
+                        <div class="bg-white p-4 rounded-lg border-2 border-gray-200 hover:border-blue-900 transition">
+                            <i class="fas fa-tag text-2xl text-green-600 mb-2"></i>
+                            <p class="font-semibold text-gray-800">Harga Kompetitif</p>
+                            <p class="text-sm text-gray-600">Terjangkau & bersaing</p>
                         </div>
-                        <div class="bg-gradient-to-br from-blue-50 to-slate-50 p-6 rounded-lg border-l-4 border-blue-700 hover:shadow-lg transition">
-                            <i class="fas fa-shield-alt text-3xl text-blue-700 mb-3"></i>
-                            <p class="font-semibold text-gray-900">Terpercaya</p>
-                            <p class="text-sm text-gray-700">Ribuan klien puas</p>
+                        <div class="bg-white p-4 rounded-lg border-2 border-gray-200 hover:border-blue-900 transition">
+                            <i class="fas fa-handshake text-2xl text-blue-900 mb-2"></i>
+                            <p class="font-semibold text-gray-800">Terpercaya</p>
+                            <p class="text-sm text-gray-600">Ribuan klien puas</p>
                         </div>
                     </div>
                 </div>
@@ -273,190 +251,172 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
+    <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4">
-                    <i class="fas fa-briefcase mr-2"></i>LAYANAN KAMI
-                </span>
-                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                    Solusi Lengkap untuk Kebutuhan Konstruksi
+                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
+                    Layanan Kami
                 </h2>
-                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
-                    Dari pemasangan plafon hingga renovasi total, kami menyediakan layanan berkualitas dengan harga kompetitif dan hasil yang memuaskan.
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Solusi plafon dan konstruksi lengkap untuk kebutuhan bangunan Anda dengan standar kualitas tinggi
                 </p>
             </div>
 
             <!-- Services Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Service 1: Plafon -->
-                <div class="service-card card-hover bg-white rounded-xl p-8 border-2 border-slate-200 hover:border-blue-700 relative overflow-hidden shadow-md">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-blue-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="service-icon bg-blue-100 text-blue-700 mb-6 relative z-10">
+                <div class="service-card card-hover bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-900">
+                    <div class="service-icon bg-blue-100 text-blue-900 mb-6">
                         <i class="fas fa-layer-group"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pemasangan Plafon</h3>
-                    <p class="text-gray-700 text-sm mb-5">Instalasi plafon berkualitas dengan material terbaik dan finishing rapi.</p>
-                    <ul class="space-y-2 text-sm text-gray-700 border-t pt-4">
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-600 text-xs"></i> Gypsum</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-600 text-xs"></i> Aluminium</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-600 text-xs"></i> PVC</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-600 text-xs"></i> Custom</li>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Pemasangan Plafon</h3>
+                    <p class="text-gray-600 mb-6">Pemasangan plafon berkualitas dengan berbagai pilihan material dan desain modern yang tahan lama.</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Gypsum</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Aluminium</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> PVC</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Custom Design</li>
                     </ul>
                 </div>
 
                 <!-- Service 2: Kanopi -->
-                <div class="service-card card-hover bg-white rounded-xl p-8 border-2 border-slate-200 hover:border-orange-600 relative overflow-hidden shadow-md">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-orange-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="service-icon bg-orange-100 text-orange-600 mb-6 relative z-10">
+                <div class="service-card card-hover bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-900">
+                    <div class="service-icon bg-gray-200 text-blue-900 mb-6">
                         <i class="fas fa-umbrella"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pemasangan Kanopi</h3>
-                    <p class="text-gray-700 text-sm mb-5">Kanopi modern yang melindungi dan menambah estetika bangunan Anda.</p>
-                    <ul class="space-y-2 text-sm text-gray-700 border-t pt-4">
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-orange-600 text-xs"></i> Besi</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-orange-600 text-xs"></i> Polycarbonate</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-orange-600 text-xs"></i> Minimalis</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-orange-600 text-xs"></i> Custom</li>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Pemasangan Kanopi</h3>
+                    <p class="text-gray-600 mb-6">Instalasi kanopi modern yang melindungi dari cuaca dengan desain estetik dan kokoh.</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Besi</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Polycarbonate</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Minimalis</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Custom</li>
                     </ul>
                 </div>
 
                 <!-- Service 3: Interior -->
-                <div class="service-card card-hover bg-white rounded-xl p-8 border-2 border-slate-200 hover:border-emerald-600 relative overflow-hidden shadow-md">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="service-icon bg-emerald-100 text-emerald-600 mb-6 relative z-10">
+                <div class="service-card card-hover bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-900">
+                    <div class="service-icon bg-blue-50 text-blue-900 mb-6">
                         <i class="fas fa-paint-brush"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Desain Interior</h3>
-                    <p class="text-gray-700 text-sm mb-5">Konsultasi dan eksekusi desain interior yang mencerminkan gaya Anda.</p>
-                    <ul class="space-y-2 text-sm text-gray-700 border-t pt-4">
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-600 text-xs"></i> Konsultasi</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-600 text-xs"></i> Renovasi</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-600 text-xs"></i> Material Premium</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-600 text-xs"></i> Finishing</li>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Desain Interior</h3>
+                    <p class="text-gray-600 mb-6">Konsultasi dan eksekusi desain interior yang mencerminkan gaya dan fungsi ruangan Anda.</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Konsultasi</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Renovasi</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Material</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Finishing Premium</li>
                     </ul>
                 </div>
 
                 <!-- Service 4: Model -->
-                <div class="service-card card-hover bg-white rounded-xl p-8 border-2 border-slate-200 hover:border-slate-700 relative overflow-hidden shadow-md">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-slate-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="service-icon bg-slate-100 text-slate-700 mb-6 relative z-10">
+                <div class="service-card card-hover bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-900">
+                    <div class="service-icon bg-blue-900 text-white mb-6">
                         <i class="fas fa-cube"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pengubahan Model</h3>
-                    <p class="text-gray-700 text-sm mb-5">Renovasi dan modifikasi struktur bangunan sesuai kebutuhan Anda.</p>
-                    <ul class="space-y-2 text-sm text-gray-700 border-t pt-4">
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-slate-600 text-xs"></i> Modifikasi</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-slate-600 text-xs"></i> Perluasan</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-slate-600 text-xs"></i> Renovasi Total</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-slate-600 text-xs"></i> Konsultasi</li>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Pengubahan Model</h3>
+                    <p class="text-gray-600 mb-6">Renovasi dan modifikasi struktur bangunan sesuai keinginan dan kebutuhan Anda.</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Modifikasi</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Perluasan</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Renovasi Total</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Konsultasi</li>
                     </ul>
                 </div>
-            </div>
-
-            <!-- CTA -->
-            <div class="mt-16 text-center">
-                <p class="text-gray-600 mb-4">Butuh layanan yang tidak terdaftar?</p>
-                <a href="#contact" class="btn-accent inline-flex items-center gap-2">
-                    <i class="fas fa-comments"></i>Konsultasi Gratis
-                </a>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 bg-white">
+    <section id="portfolio" class="py-20 bg-gradient-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-                    <i class="fas fa-camera mr-2"></i>PORTFOLIO KAMI
-                </span>
-                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                    Hasil Karya Nyata dari Proyek Kami
+                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
+                    Portfolio Kami
                 </h2>
-                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
-                    Lihat berbagai proyek yang telah kami selesaikan dengan hasil profesional dan memuaskan
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Lihat hasil karya kami dari berbagai proyek pemasangan plafon yang telah diselesaikan
                 </p>
             </div>
 
             <!-- Portfolio Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="group relative overflow-hidden rounded-xl h-64 sm:h-80 bg-gradient-to-br from-blue-600 to-blue-900 cursor-pointer shadow-lg hover:shadow-2xl transition">
+                <div class="group relative overflow-hidden rounded-2xl h-64 sm:h-80 bg-gradient-to-br from-blue-900 to-blue-700 cursor-pointer shadow-lg hover:shadow-2xl transition">
                     <div class="w-full h-full flex items-center justify-center">
-                        <i class="fas fa-image text-6xl text-white opacity-20"></i>
+                        <i class="fas fa-layer-group text-6xl text-white opacity-20"></i>
                     </div>
-                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition duration-300"></div>
                     <div class="absolute inset-0 flex items-end p-6">
-                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300 text-white">
-                            <p class="font-bold text-lg">Pemasangan Plafon Gypsum</p>
-                            <p class="text-blue-100 text-sm">Rumah Modern, Yogyakarta</p>
+                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300">
+                            <p class="text-white font-semibold text-lg">Pemasangan Plafon Gypsum</p>
+                            <p class="text-gray-200 text-sm">Rumah Modern, Yogyakarta</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl h-64 sm:h-80 bg-gradient-to-br from-orange-500 to-orange-900 cursor-pointer shadow-lg hover:shadow-2xl transition">
+                <div class="group relative overflow-hidden rounded-2xl h-64 sm:h-80 bg-gradient-to-br from-gray-700 to-gray-500 cursor-pointer shadow-lg hover:shadow-2xl transition">
                     <div class="w-full h-full flex items-center justify-center">
-                        <i class="fas fa-image text-6xl text-white opacity-20"></i>
+                        <i class="fas fa-umbrella text-6xl text-white opacity-20"></i>
                     </div>
-                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition duration-300"></div>
                     <div class="absolute inset-0 flex items-end p-6">
-                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300 text-white">
-                            <p class="font-bold text-lg">Kanopi Polycarbonate</p>
-                            <p class="text-orange-100 text-sm">Garasi Rumah, Yogyakarta</p>
+                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300">
+                            <p class="text-white font-semibold text-lg">Kanopi Polycarbonate</p>
+                            <p class="text-gray-200 text-sm">Garasi Rumah, Yogyakarta</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl h-64 sm:h-80 bg-gradient-to-br from-emerald-600 to-emerald-900 cursor-pointer shadow-lg hover:shadow-2xl transition">
+                <div class="group relative overflow-hidden rounded-2xl h-64 sm:h-80 bg-gradient-to-br from-blue-800 to-blue-600 cursor-pointer shadow-lg hover:shadow-2xl transition">
                     <div class="w-full h-full flex items-center justify-center">
-                        <i class="fas fa-image text-6xl text-white opacity-20"></i>
+                        <i class="fas fa-paint-brush text-6xl text-white opacity-20"></i>
                     </div>
-                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition duration-300"></div>
                     <div class="absolute inset-0 flex items-end p-6">
-                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300 text-white">
-                            <p class="font-bold text-lg">Desain Interior Ruang Keluarga</p>
-                            <p class="text-emerald-100 text-sm">Renovasi Rumah, Yogyakarta</p>
+                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300">
+                            <p class="text-white font-semibold text-lg">Desain Interior Ruang Keluarga</p>
+                            <p class="text-gray-200 text-sm">Renovasi Rumah, Yogyakarta</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl h-64 sm:h-80 bg-gradient-to-br from-slate-700 to-slate-900 cursor-pointer shadow-lg hover:shadow-2xl transition">
+                <div class="group relative overflow-hidden rounded-2xl h-64 sm:h-80 bg-gradient-to-br from-blue-900 to-gray-700 cursor-pointer shadow-lg hover:shadow-2xl transition">
                     <div class="w-full h-full flex items-center justify-center">
-                        <i class="fas fa-image text-6xl text-white opacity-20"></i>
+                        <i class="fas fa-cube text-6xl text-white opacity-20"></i>
                     </div>
-                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition duration-300"></div>
                     <div class="absolute inset-0 flex items-end p-6">
-                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300 text-white">
-                            <p class="font-bold text-lg">Renovasi Total Rumah</p>
-                            <p class="text-slate-200 text-sm">Rumah Keluarga, Yogyakarta</p>
+                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300">
+                            <p class="text-white font-semibold text-lg">Renovasi Total Rumah</p>
+                            <p class="text-gray-200 text-sm">Rumah Keluarga, Yogyakarta</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl h-64 sm:h-80 bg-gradient-to-br from-blue-700 to-slate-900 cursor-pointer shadow-lg hover:shadow-2xl transition">
+                <div class="group relative overflow-hidden rounded-2xl h-64 sm:h-80 bg-gradient-to-br from-gray-600 to-gray-800 cursor-pointer shadow-lg hover:shadow-2xl transition">
                     <div class="w-full h-full flex items-center justify-center">
-                        <i class="fas fa-image text-6xl text-white opacity-20"></i>
+                        <i class="fas fa-layer-group text-6xl text-white opacity-20"></i>
                     </div>
-                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition duration-300"></div>
                     <div class="absolute inset-0 flex items-end p-6">
-                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300 text-white">
-                            <p class="font-bold text-lg">Plafon Aluminium Kantor</p>
-                            <p class="text-blue-100 text-sm">Gedung Kantor, Yogyakarta</p>
+                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300">
+                            <p class="text-white font-semibold text-lg">Plafon Aluminium Kantor</p>
+                            <p class="text-gray-200 text-sm">Gedung Kantor, Yogyakarta</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl h-64 sm:h-80 bg-gradient-to-br from-orange-600 to-slate-800 cursor-pointer shadow-lg hover:shadow-2xl transition">
+                <div class="group relative overflow-hidden rounded-2xl h-64 sm:h-80 bg-gradient-to-br from-blue-700 to-blue-900 cursor-pointer shadow-lg hover:shadow-2xl transition">
                     <div class="w-full h-full flex items-center justify-center">
-                        <i class="fas fa-image text-6xl text-white opacity-20"></i>
+                        <i class="fas fa-umbrella text-6xl text-white opacity-20"></i>
                     </div>
-                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition duration-300"></div>
                     <div class="absolute inset-0 flex items-end p-6">
-                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300 text-white">
-                            <p class="font-bold text-lg">Kanopi Besi Custom</p>
-                            <p class="text-orange-100 text-sm">Toko Ritel, Yogyakarta</p>
+                        <div class="transform translate-y-10 group-hover:translate-y-0 transition duration-300">
+                            <p class="text-white font-semibold text-lg">Kanopi Besi Custom</p>
+                            <p class="text-gray-200 text-sm">Toko Ritel, Yogyakarta</p>
                         </div>
                     </div>
                 </div>
@@ -465,18 +425,15 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
+    <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4">
-                    <i class="fas fa-phone-alt mr-2"></i>HUBUNGI KAMI
-                </span>
-                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                    Siap Membantu Proyek Anda
+                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
+                    Hubungi Kami
                 </h2>
-                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
-                    Hubungi tim kami sekarang untuk konsultasi gratis dan dapatkan penawaran terbaik untuk kebutuhan konstruksi Anda
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Siap memberikan solusi terbaik untuk kebutuhan pemasangan plafon Anda
                 </p>
             </div>
 
@@ -484,86 +441,75 @@
                 <!-- Contact Info -->
                 <div class="space-y-6">
                     <!-- Location -->
-                    <div class="bg-white p-6 rounded-xl border-l-4 border-blue-700 hover:shadow-lg transition card-hover">
-                        <div class="w-14 h-14 gradient-primary rounded-lg flex items-center justify-center mb-4">
+                    <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-blue-900 transition card-hover">
+                        <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-map-marker-alt text-2xl text-white"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-2">Lokasi Kami</h3>
-                        <p class="text-gray-700 font-medium">Daerah Istimewa Yogyakarta</p>
-                        <p class="text-sm text-gray-600 mt-1">Indonesia</p>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Lokasi</h3>
+                        <p class="text-gray-600">Daerah Istimewa Yogyakarta, Indonesia</p>
                     </div>
 
                     <!-- WhatsApp -->
-                    <div class="gradient-accent rounded-xl p-6 text-white hover:shadow-xl transition card-hover">
-                        <div class="w-14 h-14 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
+                    <div class="bg-gradient-to-br from-green-400 to-green-600 p-6 rounded-2xl text-white hover:shadow-xl transition card-hover">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
                             <i class="fab fa-whatsapp text-2xl"></i>
                         </div>
                         <h3 class="text-lg font-bold mb-2">WhatsApp</h3>
-                        <a href="https://wa.me/6285773907878" target="_blank" class="text-white hover:text-gray-100 font-bold text-xl block">
+                        <a href="https://wa.me/6285773907878" target="_blank" class="text-white hover:text-gray-100 font-semibold text-lg">
                             +62 857 7390 7878
                         </a>
-                        <p class="text-sm text-orange-100 mt-2">Respons cepat & terpercaya</p>
                     </div>
 
                     <!-- Hours -->
-                    <div class="bg-white p-6 rounded-xl border-l-4 border-orange-600 hover:shadow-lg transition card-hover">
-                        <div class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-clock text-2xl text-orange-600"></i>
+                    <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-blue-900 transition card-hover">
+                        <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-clock text-2xl text-white"></i>
                         </div>
                         <h3 class="text-lg font-bold text-gray-900 mb-3">Jam Operasional</h3>
-                        <ul class="space-y-2 text-sm text-gray-700">
-                            <li class="flex justify-between"><span>Senin - Jumat</span> <span class="font-bold">08:00 - 17:00</span></li>
-                            <li class="flex justify-between"><span>Sabtu</span> <span class="font-bold">08:00 - 12:00</span></li>
-                            <li class="flex justify-between"><span>Minggu</span> <span class="font-bold">Libur</span></li>
+                        <ul class="space-y-1 text-gray-600">
+                            <li class="flex justify-between"><span>Senin - Jumat</span> <span class="font-semibold">08:00 - 17:00</span></li>
+                            <li class="flex justify-between"><span>Sabtu</span> <span class="font-semibold">08:00 - 12:00</span></li>
+                            <li class="flex justify-between"><span>Minggu</span> <span class="font-semibold">Libur</span></li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
                 <div class="lg:col-span-2">
-                    <div class="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-700">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                            <i class="fas fa-envelope text-blue-700"></i>
-                            Kirim Pesan
-                        </h3>
-                        <form id="contactForm" class="space-y-4">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <input type="text" placeholder="Nama Lengkap" class="px-5 py-3 bg-gray-50 rounded-lg border-2 border-gray-200 focus:border-blue-700 focus:outline-none transition font-medium placeholder-gray-500" required>
-                                <input type="email" placeholder="Email" class="px-5 py-3 bg-gray-50 rounded-lg border-2 border-gray-200 focus:border-blue-700 focus:outline-none transition font-medium placeholder-gray-500" required>
-                            </div>
-                            <input type="tel" placeholder="Nomor Telepon / WhatsApp" class="w-full px-5 py-3 bg-gray-50 rounded-lg border-2 border-gray-200 focus:border-blue-700 focus:outline-none transition font-medium placeholder-gray-500" required>
-                            <select class="w-full px-5 py-3 bg-gray-50 rounded-lg border-2 border-gray-200 focus:border-blue-700 focus:outline-none transition font-medium text-gray-600" required>
-                                <option value="" disabled selected>Pilih Jenis Layanan</option>
-                                <option value="plafon">Pemasangan Plafon</option>
-                                <option value="kanopi">Pemasangan Kanopi</option>
-                                <option value="interior">Desain Interior</option>
-                                <option value="model">Pengubahan Model Bangunan</option>
-                                <option value="lainnya">Lainnya / Konsultasi</option>
-                            </select>
-                            <textarea placeholder="Deskripsi Proyek / Pertanyaan Anda" rows="5" class="w-full px-5 py-3 bg-gray-50 rounded-lg border-2 border-gray-200 focus:border-blue-700 focus:outline-none transition font-medium resize-none placeholder-gray-500" required></textarea>
-                            <button type="submit" class="w-full btn-primary font-bold text-lg flex items-center justify-center gap-2">
-                                <i class="fas fa-paper-plane"></i>Kirim Pesan
-                            </button>
-                        </form>
-                    </div>
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Nama Lengkap" class="px-6 py-3 bg-gray-50 rounded-xl border-2 border-gray-200 focus:border-blue-900 focus:outline-none transition font-medium" required>
+                            <input type="email" placeholder="Email" class="px-6 py-3 bg-gray-50 rounded-xl border-2 border-gray-200 focus:border-blue-900 focus:outline-none transition font-medium" required>
+                        </div>
+                        <input type="tel" placeholder="Nomor Telepon" class="w-full px-6 py-3 bg-gray-50 rounded-xl border-2 border-gray-200 focus:border-blue-900 focus:outline-none transition font-medium" required>
+                        <select class="w-full px-6 py-3 bg-gray-50 rounded-xl border-2 border-gray-200 focus:border-blue-900 focus:outline-none transition font-medium" required>
+                            <option value="">Pilih Jenis Layanan</option>
+                            <option value="plafon">Pemasangan Plafon</option>
+                            <option value="kanopi">Pemasangan Kanopi</option>
+                            <option value="interior">Desain Interior</option>
+                            <option value="model">Pengubahan Model Bangunan</option>
+                        </select>
+                        <textarea placeholder="Deskripsi Pekerjaan / Pertanyaan" rows="5" class="w-full px-6 py-3 bg-gray-50 rounded-xl border-2 border-gray-200 focus:border-blue-900 focus:outline-none transition font-medium resize-none" required></textarea>
+                        <button type="submit" class="w-full btn-primary font-semibold text-lg">
+                            <i class="fas fa-send mr-2"></i>Kirim Pesan
+                        </button>
+                    </form>
                 </div>
             </div>
 
             <!-- CTA Banner -->
-            <div class="mt-16 gradient-primary-alt rounded-2xl p-12 text-white text-center relative overflow-hidden">
-                <div class="absolute inset-0 opacity-10">
+            <div class="mt-16 gradient-primary rounded-3xl p-12 text-white text-center relative overflow-hidden">
+                <div class="absolute inset-0 opacity-15">
                     <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
                 </div>
                 <div class="relative z-10">
-                    <h3 class="font-display text-3xl sm:text-4xl font-bold mb-4">
-                        <i class="fas fa-rocket mr-2"></i>Mulai Proyek Anda Hari Ini
-                    </h3>
-                    <p class="text-lg opacity-95 mb-8 max-w-2xl mx-auto">
-                        Jangan ragu untuk menghubungi kami. Tim profesional Mandiri Plafon siap memberikan solusi terbaik dengan harga yang kompetitif dan hasil yang memuaskan.
+                    <h3 class="font-display text-3xl sm:text-4xl font-bold mb-4">Siap Memulai Proyek Anda?</h3>
+                    <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+                        Hubungi kami sekarang melalui WhatsApp untuk konsultasi gratis dan penawaran terbaik
                     </p>
-                    <a href="https://wa.me/6285773907878?text=Halo%20Mandiri%20Plafon%2C%20saya%20tertarik%20dengan%20layanan%20Anda%20dan%20ingin%20konsultasi%20gratis" target="_blank" class="inline-flex items-center gap-2 px-10 py-4 bg-white text-orange-600 rounded-lg font-bold text-lg hover:shadow-2xl transition hover:-translate-y-1">
+                    <a href="https://wa.me/6285773907878" target="_blank" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-blue-900 rounded-lg font-bold text-lg hover:shadow-xl transition hover:-translate-y-1">
                         <i class="fab fa-whatsapp"></i>
-                        Chat WhatsApp Sekarang
+                        Chat Sekarang
                     </a>
                 </div>
             </div>
@@ -571,38 +517,24 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-white py-12 border-t-4 border-orange-600">
+    <footer class="bg-blue-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <!-- Brand -->
                 <div>
                     <div class="flex items-center gap-2 mb-4">
-                        <div class="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center text-white font-bold">
-                            <i class="fas fa-hammer"></i>
+                        <div class="w-10 h-10 bg-gradient-to-br from-white to-gray-200 rounded-lg flex items-center justify-center text-blue-900 font-bold">
+                            <i class="fas fa-building"></i>
                         </div>
-                        <div>
-                            <p class="font-bold text-lg">Mandiri Plafon</p>
-                            <p class="text-xs text-orange-400">Solusi Konstruksi</p>
-                        </div>
+                        <span class="font-bold text-lg">Mandiri Plafon</span>
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed">Jasa konstruksi profesional terpercaya di Yogyakarta dengan pengalaman lebih dari 10 tahun.</p>
+                    <p class="text-gray-300">Jasa pemasangan plafon berkualitas tinggi dan terpercaya di Yogyakarta</p>
                 </div>
 
-                <!-- Services -->
+                <!-- Links -->
                 <div>
-                    <h4 class="font-bold text-lg mb-4 text-orange-500">Layanan</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#services" class="hover:text-white transition">Pemasangan Plafon</a></li>
-                        <li><a href="#services" class="hover:text-white transition">Pemasangan Kanopi</a></li>
-                        <li><a href="#services" class="hover:text-white transition">Desain Interior</a></li>
-                        <li><a href="#services" class="hover:text-white transition">Pengubahan Model</a></li>
-                    </ul>
-                </div>
-
-                <!-- Navigation -->
-                <div>
-                    <h4 class="font-bold text-lg mb-4 text-blue-400">Menu</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
+                    <h4 class="font-bold text-lg mb-4">Menu</h4>
+                    <ul class="space-y-2 text-gray-300">
                         <li><a href="#home" class="hover:text-white transition">Beranda</a></li>
                         <li><a href="#services" class="hover:text-white transition">Layanan</a></li>
                         <li><a href="#portfolio" class="hover:text-white transition">Portfolio</a></li>
@@ -610,44 +542,33 @@
                     </ul>
                 </div>
 
-                <!-- Contact Quick -->
+                <!-- Contact -->
                 <div>
-                    <h4 class="font-bold text-lg mb-4 text-emerald-400">Hubungi Kami</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex items-center gap-2 text-gray-400 hover:text-white transition">
-                            <i class="fas fa-map-marker-alt text-orange-500"></i>
+                    <h4 class="font-bold text-lg mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-white"></i>
                             Yogyakarta, Indonesia
                         </li>
                         <li class="flex items-center gap-2">
                             <i class="fas fa-phone text-green-500"></i>
-                            <a href="https://wa.me/6285773907878" target="_blank" class="text-gray-400 hover:text-white transition">+62 857 7390 7878</a>
-                        </li>
-                        <li class="pt-2">
-                            <a href="https://wa.me/6285773907878" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-accent rounded-lg text-white font-semibold text-xs hover:shadow-lg transition">
-                                <i class="fab fa-whatsapp"></i>Chat
-                            </a>
+                            <a href="https://wa.me/6285773907878" target="_blank" class="hover:text-white transition">+62 857 7390 7878</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <!-- Divider -->
-            <div class="border-t border-slate-700 pt-8">
-                <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
-                    <p>
-                        &copy; 2025 Mandiri Plafon. Semua Hak Dilindungi.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="#" class="hover:text-orange-500 transition">Kebijakan Privasi</a>
-                        <a href="#" class="hover:text-orange-500 transition">Syarat & Ketentuan</a>
-                    </div>
-                </div>
+            <div class="border-t border-blue-800 pt-8">
+                <p class="text-center text-gray-300">
+                    &copy; 2025 Mandiri Plafon. Semua Hak Dilindungi | Yogyakarta, Indonesia
+                </p>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/6285773907878" target="_blank" class="fixed bottom-8 right-8 w-16 h-16 gradient-accent text-white rounded-full flex items-center justify-center text-2xl hover:shadow-2xl transition transform hover:scale-110 z-40" title="Chat WhatsApp">
+    <a href="https://wa.me/6285773907878" target="_blank" class="fixed bottom-8 right-8 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl hover:bg-green-600 transition transform hover:scale-110 hover:shadow-2xl z-40 animate-pulse">
         <i class="fab fa-whatsapp"></i>
     </a>
 
