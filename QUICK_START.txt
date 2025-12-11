@@ -1,0 +1,195 @@
+📌 QUICK START GUIDE - MANDIRI PLAFON v2.0
+
+═══════════════════════════════════════════════════════════════════════════
+
+⚡ LANGKAH PERTAMA: BUKA WEBSITE
+
+1. Buka folder: d:\mandiri-plafon
+2. Double-click file: index.html
+3. Website terbuka di browser! ✨
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎨 CUSTOMISASI CEPAT (3 Hal Penting)
+
+1️⃣  NOMOR WHATSAPP
+   Buka index.html dengan notepad
+   Ctrl+H → Find & Replace
+   Cari: 6285773907878
+   Ganti dengan nomor Anda
+   Simpan (Ctrl+S)
+
+2️⃣  WARNA THEME
+   Buka index.html
+   Cari di <head>: .gradient-primary
+   Ubah warna:
+   #667eea → warna baru 1
+   #764ba2 → warna baru 2
+   Simpan
+
+3️⃣  TEKS KONTEN
+   Edit langsung di index.html
+   Contoh: <h1>Teks Lama</h1>
+   Menjadi: <h1>Teks Baru</h1>
+
+═══════════════════════════════════════════════════════════════════════════
+
+📸 TAMBAHKAN FOTO PORTFOLIO
+
+1. Siapkan foto project (.jpg atau .png)
+2. Compress ukuran di: https://tinypng.com
+3. Simpan ke folder: assets/images/
+4. Edit index.html di portfolio section
+5. Ganti dari icon menjadi img:
+   Dari: <i class="fas fa-image"></i>
+   Ke:   <img src="assets/images/foto-anda.jpg" alt="Deskripsi">
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ TESTING CHECKLIST
+
+□ Buka di mobile (geser & click menu)
+□ Buka di tablet
+□ Buka di desktop
+□ Click semua link
+□ Test form WhatsApp
+□ Check loading time
+□ Test hamburger menu
+
+═══════════════════════════════════════════════════════════════════════════
+
+🚀 DEPLOY KE INTERNET (Opsional)
+
+Jika ingin website bisa diakses online:
+
+OPTION A - Vercel (Termudah)
+1. Daftar di vercel.com
+2. Upload folder ke GitHub
+3. Connect GitHub ke Vercel
+4. Deploy otomatis!
+
+OPTION B - Netlify
+1. Daftar di netlify.com
+2. Drag & drop folder kemari
+3. Selesai! Dapat domain gratis
+
+OPTION C - Traditional Hosting
+1. Sewa hosting (cth: Niagahoster)
+2. Upload via FTP
+3. Akses via domain Anda
+
+═══════════════════════════════════════════════════════════════════════════
+
+📚 FILE DOKUMENTASI
+
+README.md               → Dokumentasi lengkap
+PANDUAN_MEMBUKA.txt   → Cara membuka & troubleshoot
+TIPS_CUSTOMISASI.md   → Tips edit & customize
+UPDATE_TAILWIND.md    → Info update Tailwind CSS
+ADVANCED_FEATURES.md  → Fitur tambahan & tips pro
+RINGKASAN_LENGKAP.txt → Detail lengkap semua fitur
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎨 FITUR WEBSITE
+
+✅ Navbar responsif dengan WhatsApp button
+✅ Hero section dengan animasi
+✅ About section dengan feature cards
+✅ 4 Service cards dengan hover effects
+✅ Portfolio section dengan 6 projects
+✅ Contact section dengan form
+✅ WhatsApp floating button
+✅ Back to top button
+✅ Smooth scrolling
+✅ Mobile menu toggle
+✅ Responsive design (mobile/tablet/desktop)
+✅ Modern animations
+✅ Fast loading
+
+═══════════════════════════════════════════════════════════════════════════
+
+🛠️ TOOLS YANG DIGUNAKAN
+
+• Tailwind CSS (Framework CSS modern)
+• Font Awesome (Icons profesional)
+• Google Fonts (Poppins + Playfair Display)
+• Vanilla JavaScript (No jQuery needed)
+
+═══════════════════════════════════════════════════════════════════════════
+
+❓ TROUBLESHOOTING
+
+Problem: Halaman tampil berantakan
+Solusi: Refresh dengan Ctrl+Shift+Delete (clear cache)
+
+Problem: Mobile menu tidak berfungsi
+Solusi: Check F12 console untuk error
+
+Problem: Gambar tidak muncul
+Solusi: Pastikan path folder benar (assets/images/)
+
+Problem: Form WhatsApp tidak bekerja
+Solusi: Pastikan format nomor benar (62xxxxx bukan +62)
+
+═══════════════════════════════════════════════════════════════════════════
+
+📊 STRUKTUR FOLDER
+
+mandiri-plafon/
+├── index.html              ← BUKA INI!
+├── README.md              ← Dokumentasi asli
+├── PANDUAN_MEMBUKA.txt    ← Cara membuka
+├── TIPS_CUSTOMISASI.md    ← Tips edit
+├── UPDATE_TAILWIND.md     ← Info update
+├── ADVANCED_FEATURES.md   ← Fitur lanjutan
+└── assets/
+    ├── css/
+    │   ├── custom.css     ← Custom animations
+    │   └── style.css      ← Old (tidak dipakai)
+    ├── js/
+    │   └── script.js      ← JavaScript
+    └── images/            ← Tempat foto Anda
+
+═══════════════════════════════════════════════════════════════════════════
+
+💡 PRO TIPS
+
+1. Test di real mobile (bukan hanya browser emulator)
+2. Compress gambar sebelum upload (< 1MB per foto)
+3. Backup file sebelum edit
+4. Use browser dev tools (F12) untuk debug
+5. Clear cache setiap kali edit
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎯 NEXT STEPS
+
+1. ✅ Buka index.html - LIHAT HASILNYA!
+2. ✅ Update nomor WhatsApp Anda
+3. ✅ Customize warna sesuai brand
+4. ✅ Tambahkan foto portfolio
+5. ✅ Share ke WhatsApp/media sosial
+6. ✅ Monitor engagement
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎉 SELAMAT!
+
+Website Mandiri Plafon Anda SIAP DIGUNAKAN!
+Desain modern, responsif, dan profesional.
+
+Mari promote jasa konstruksi Anda dengan style! 🚀
+
+═══════════════════════════════════════════════════════════════════════════
+
+📞 KONTAK CEPAT
+
+WhatsApp: +62 857 7390 7878
+Lokasi: Yogyakarta, Indonesia
+Email: (tambahkan sesuai kebutuhan)
+
+═══════════════════════════════════════════════════════════════════════════
+
+Created with 💜 using Tailwind CSS
+Yogyakarta, 2025

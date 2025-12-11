@@ -1,0 +1,176 @@
+# 🚀 PANDUAN MEMBUKA WEBSITE MANDIRI PLAFON
+
+## Cara Membuka Website (3 Pilihan)
+
+### ✅ PILIHAN 1: Double-Click File (Termudah)
+1. Buka folder `d:\mandiri-plafon`
+2. Cari file bernama `index.html`
+3. **Double-click** file tersebut
+4. Website akan terbuka otomatis di browser Anda
+
+---
+
+### ✅ PILIHAN 2: Buka dari Browser
+1. Buka browser favorit Anda (Chrome, Firefox, Edge, dll)
+2. Tekan **Ctrl + O** (atau klik menu File → Open)
+3. Cari dan pilih file `d:\mandiri-plafon\index.html`
+4. Klik **Buka** atau **Open**
+
+---
+
+### ✅ PILIHAN 3: Drag & Drop
+1. Buka browser favorit Anda
+2. Buka file explorer dan navigasi ke `d:\mandiri-plafon`
+3. **Drag** file `index.html` ke jendela browser
+4. Website akan membuka otomatis
+
+---
+
+## 📂 Struktur File yang Sudah Dibuat
+
+```
+d:\mandiri-plafon\
+├── index.html              ← File utama (buka ini!)
+├── README.md              ← Panduan lengkap
+├── PANDUAN_MEMBUKA.txt    ← File ini
+└── assets\
+    ├── css\
+    │   └── style.css      ← Styling & desain
+    ├── js\
+    │   └── script.js      ← Interaktivitas
+    └── images\            ← Folder untuk foto
+```
+
+---
+
+## ✨ Fitur Website yang Sudah Aktif
+
+✅ **Halaman Beranda** - Hero section menarik
+✅ **Menu Navigasi** - Navigasi mudah di atas halaman
+✅ **Tentang Kami** - Deskripsi bisnis Anda
+✅ **4 Layanan Utama:**
+   - 🏠 Pemasangan Plafon
+   - ☂️ Pemasangan Kanopi
+   - 🎨 Desain Interior
+   - 🏗️ Pengubahan Model Bangunan
+
+✅ **Portfolio Section** - Galeri project
+✅ **Form Kontak** - Langsung ke WhatsApp Anda
+✅ **Tombol WhatsApp Floating** - Di kanan bawah halaman
+✅ **Mobile Responsive** - Optimal di semua device
+✅ **Animasi Smooth** - Efek visual profesional
+
+---
+
+## 📞 Kontak Terintegrase
+
+**Nomor WhatsApp yang terdaftar:** +62 857 7390 7878
+
+Semua form kontak dan tombol WhatsApp mengirim ke nomor ini.
+
+---
+
+## 🎨 Menambahkan Gambar Portfolio
+
+1. **Siapkan foto** (format: JPG, PNG)
+2. Salin foto ke folder: `assets\images\`
+3. Edit `index.html` di section portfolio
+4. Ganti yang sebelumnya:
+   ```html
+   <i class="fas fa-image"></i>
+   ```
+   Dengan:
+   ```html
+   <img src="assets/images/nama-foto.jpg" alt="Deskripsi">
+   ```
+
+---
+
+## 🔧 Customisasi Mudah
+
+### Mengubah Nomor WhatsApp
+1. Buka `index.html` dengan notepad/editor
+2. Cari: `6285773907878`
+3. Ganti dengan nomor Anda
+4. Simpan file (Ctrl+S)
+
+### Mengubah Warna Tema
+1. Buka `assets/css/style.css`
+2. Cari bagian `:root {` di awal
+3. Edit warna sesuai keinginan:
+   - `--primary-color` = Warna utama
+   - `--secondary-color` = Warna aksen biru
+   - `--accent-color` = Warna merah
+
+### Mengubah Teks
+1. Buka `index.html`
+2. Cari teks yang ingin diubah
+3. Edit sesuai kebutuhan
+4. Simpan (Ctrl+S)
+
+---
+
+## 💡 Tips Penting
+
+1. **Jangan ubah nama folder** - Tetap gunakan `assets` agar gambar tetap terhubung
+2. **Backup file** - Simpan backup sebelum melakukan perubahan
+3. **Test di mobile** - Selalu test di smartphone setelah edit
+4. **Compress gambar** - Kecilkan ukuran foto agar loading cepat
+
+---
+
+## 🌐 Deploy ke Internet (Opsional)
+
+Jika ingin website bisa diakses online:
+1. Sewa hosting (cth: Niagahoster, Hostinger, dll)
+2. Upload semua file ke hosting
+3. Domain akan mengarah ke website Anda
+
+---
+
+## ❓ Troubleshooting
+
+**Q: Website tidak terbuka?**
+- Pastikan file `index.html` ada di `d:\mandiri-plafon\`
+- Coba buka dengan browser lain
+
+**Q: Gambar tidak muncul?**
+- Pastikan folder `assets` ada di tempat yang sama dengan `index.html`
+- Periksa path gambar di HTML
+
+**Q: Form WhatsApp tidak bekerja?**
+- Pastikan nomor WhatsApp sudah di-update dengan benar
+- Pastikan pakai format: 62 (bukan +62)
+
+**Q: Tampilannya berantakan di mobile?**
+- Refresh halaman (Ctrl+F5)
+- Coba browser lain
+
+---
+
+## 📝 File-File Penting
+
+| File | Fungsi |
+|------|--------|
+| `index.html` | File utama website |
+| `assets/css/style.css` | Desain & warna |
+| `assets/js/script.js` | Tombol, form, animasi |
+| `README.md` | Dokumentasi lengkap |
+
+---
+
+## 🎯 Langkah Selanjutnya
+
+1. ✅ Buka `index.html` dan lihat hasilnya
+2. ✅ Tambahkan foto project Anda ke folder `assets/images/`
+3. ✅ Edit nomor WhatsApp sesuai kebutuhan
+4. ✅ Sesuaikan warna dan teks sesuka hati
+5. ✅ Share link website ke calon klien!
+
+---
+
+**Selamat! Website Mandiri Plafon Anda sudah siap! 🎉**
+
+Jika ada pertanyaan atau perlu bantuan, silakan hubungi pembuat website.
+
+Yogyakarta, 2025
